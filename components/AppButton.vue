@@ -1,9 +1,10 @@
 <template>
-  <button class="fill relative font-fira text-secondary border-[#64ffda] border rounded text-[13px] bg-transparent px-[16px] py-[12px]">View CV</button>
+  <button :class="customStyle" class="fill relative font-fira text-secondary border-[#64ffda] border rounded text-[13px] bg-transparent px-[16px] py-[12px]">{{ text }}</button>
 </template>
 
 <script>
 export default {
+    props: ["text", "customStyle"]
 
 }
 </script>
