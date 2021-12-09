@@ -8,7 +8,7 @@
                 </svg>
             </div>
 
-            <ol class="h-3/6 w-full flex flex-col items-center justify-center font-fira gap-y-6 font-light">
+            <ol class="h-3/6 w-full flex flex-col items-center justify-center font-fira gap-y-4 font-light">
                 <li class="my-1 flex flex-col items-center">
                     <span class="text-secondary text-sm text-center">01.</span>
                     <a class="p-5 pt-0 text-primary-300 hover:text-secondary duration-500" href="#about">About</a>
@@ -27,6 +27,12 @@
                 <li class="my-1 flex flex-col items-center">
                     <span class="text-secondary text-sm text-center">04.</span>
                     <a class="p-5 pt-0 text-primary-300 hover:text-secondary duration-500" href="#contact">Contact</a>
+                </li>
+
+                <li class="my-4">
+                    <a href="#">
+                        <AppButton />
+                    </a>
                 </li>
             </ol>
         </nav>

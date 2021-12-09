@@ -2,7 +2,7 @@
   <header class="h-24 z-10 px-6 md:px-10 flex justify-between items-center fixed top-0 w-full backdrop-blur-sm bg-theme-primary bg-opacity-80">
     
     <!-- Placeholder Logo -->
-    <div class="h-10 w-10 bg-[#64ffda]"></div>
+    <div class="h-10 w-10 bg-[#64ffda] bg-opacity-30"></div>
     
     <!-- Hamburger Menu -->
     <div class="md:hidden cursor-pointer" @click="toggleNavbar" v-if="!displayNavbar">
