@@ -3,9 +3,12 @@
   <AppNav />
   <Home />
   <About />
+  <Experience />
 </main>
 </template>
 
 <script>
-export default {}
+import Experience from '../components/Experience.vue'
+export default {
+  components: { Experience },}
 </script>
