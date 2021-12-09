@@ -12,18 +12,22 @@
     </div>
 
     <!-- Nav Items -->
-    <ol class="hidden md:flex">
+    <ol class="hidden md:flex gap-1 font-fira">
         <li class="mx-1">
-            <a class="p-2 text-sm text-primary-300 hover:text-secondary duration-500" href="#">About</a>
+            <span class="text-secondary text-xs p-1">01.</span>
+            <a class="p-2 pl-0 text-sm text-primary-300 hover:text-secondary duration-500" href="#">About</a>
         </li>
         <li class="mx-1">
-            <a class="p-2 text-sm text-primary-300 hover:text-secondary duration-500" href="#">Experience</a>
+            <span class="text-secondary text-xs p-1">02.</span>
+            <a class="p-2 pl-0 text-sm text-primary-300 hover:text-secondary duration-500" href="#">Experience</a>
         </li>
         <li class="mx-1">
-            <a class="p-2 text-sm text-primary-300 hover:text-secondary duration-500" href="#">Work</a>
+            <span class="text-secondary text-xs p-1">03.</span>
+            <a class="p-2 pl-0 text-sm text-primary-300 hover:text-secondary duration-500" href="#">Work</a>
         </li>
         <li class="mx-1">
-            <a class="p-2 text-sm text-primary-300 hover:text-secondary duration-500" href="#">Contact</a>
+            <span class="text-secondary text-xs p-1">04.</span>
+            <a class="p-2 pl-0 text-sm text-primary-300 hover:text-secondary duration-500" href="#">Contact</a>
         </li>
     </ol>
 
