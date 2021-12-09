@@ -12,7 +12,7 @@
     </div>
 
     <!-- Nav Items -->
-    <ol class="hidden md:flex gap-1 font-fira">
+    <ol class="hidden md:flex gap-1 font-fira items-center font-light">
         <li class="mx-1">
             <span class="text-secondary text-xs p-1 pr-0">01.</span>
             <a class="p-2 pl-0 text-sm text-primary-300 hover:text-secondary duration-500" href="#">About</a>
@@ -28,6 +28,11 @@
         <li class="mx-1">
             <span class="text-secondary text-xs p-1 pr-0">04.</span>
             <a class="p-2 pl-0 text-sm text-primary-300 hover:text-secondary duration-500" href="#">Contact</a>
+        </li>
+        <li class="ml-4">
+            <a href="#">
+                <AppButton />
+            </a>
         </li>
     </ol>
 
