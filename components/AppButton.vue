@@ -1,5 +1,5 @@
 <template>
-  <button :class="customStyle" class="fill relative font-fira text-secondary border-[#64ffda] border rounded text-[13px] bg-transparent px-[16px] py-[12px]">{{ text }}</button>
+  <button :class="customStyle" class="fill relative font-fira text-secondary border-[#59e4a0] border rounded text-[13px] bg-transparent px-[16px] py-[12px]">{{ text }}</button>
 </template>
 
 <script>

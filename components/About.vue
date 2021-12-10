@@ -9,7 +9,7 @@
           <li class="mb-4">I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</li>
           <li class="mb-4">Here are a few technologies I’ve been working with recently:</li>
         </ul>
-        <figure class="h-72 min-w-[13rem] max-w-[13rem] bg-red-200 mt-12 sm:mt-0 mx-auto"></figure>
+        <figure class="h-72 min-w-[13rem] max-w-[13rem] bg-gray-50 mt-12 sm:mt-0 mx-auto"></figure>
       </div>
     </section>
   </main>

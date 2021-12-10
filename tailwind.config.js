@@ -6,7 +6,8 @@ module.exports = {
       extend: {
         backgroundColor: {
           theme: {
-            primary: '#0a192c'
+            primary: '#26252a',
+            secondary: "#303030"
           }
         },
         fontFamily: {
@@ -15,11 +16,10 @@ module.exports = {
         },
         textColor: {
           primary: {
-            100: "#8892b0",
-            200: "#a8b2d1",
-            300: "#ccd6f6"
+            100: "#fdfdfd",
+            200: "#b0b1bc",
           },
-          secondary: '#64ffda',
+          secondary: '#59e4a0',
         }
       },
     },
