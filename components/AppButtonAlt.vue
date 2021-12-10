@@ -1,5 +1,5 @@
 <template>
-  <button :class="customStyle" class="fill relative font-fira text-[#f8c41d] border-[#f8c41d] border rounded text-[13px] bg-transparent px-[16px] py-[12px]">{{ text }}</button>
+  <button :class="customStyle" class="fill relative font-fira text-[#59e4a0] border-[#59e4a0] border rounded text-[13px] bg-transparent px-[16px] py-[12px]">{{ text }}</button>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
 .fill:before {
   content: "";
   position: absolute;
-  background: #f8c51d3a;
+  background: #59e4a137;
   bottom: 0;
   left: 0;
   right: 0;
