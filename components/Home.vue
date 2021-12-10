@@ -1,5 +1,5 @@
 <template>
-  <main class="h-[calc(100vh-6rem)] flex duration-200 pt-24">
+  <main class="min-h-screen flex duration-200 pt-24 p-6 md:p-12 lg:px-20 xl:px-40 items-center">
     <section class="flex flex-col w-max lg:mx-10 xl:mx-20 h-4/5 justify-center duration-200">
 
       <div class="flex items-center mb-7 ml-1">
@@ -15,6 +15,8 @@
         <AppButton text="Get in Touch!"  class="w-full mt-12"/>
       </a>
     </section>
+    <BackgroundRing customClasses="h-24 sm:h-48 md:h-64 lg:h-96 right-0 bottom-0"/>
+
   </main>
 </template>
 
