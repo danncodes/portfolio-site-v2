@@ -33,7 +33,7 @@
         </li>
         <li class="ml-4">
             <a href="#">
-                <AppButton text="View CV"/>
+                <AppButtonAlt text="View CV"/>
             </a>
         </li>
     </ol>
