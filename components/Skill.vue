@@ -7,10 +7,6 @@
 <script>
 export default {
     props: ["skill"],
-    mounted(){
-        console.log(this.skill.icon)
-    }
-
 }
 </script>
 

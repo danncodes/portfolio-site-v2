@@ -8,8 +8,8 @@
       </div>
       <h3 class="font-medium text-2xl md:text-3xl lg:text-4xl duration-200 mb-3">Hello</h3>
       <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl duration-200">I'm Daniel Mensah.</h1>
-      <p class="mt-5 max-w-lg duration-200">I’m a software engineer resposible for implementing user interfaces/features using Javascript. Building user ecoeriences 
-        Creating UIs using Vue.js Blah Blah
+      <p class="mt-5 max-w-lg duration-200">I’m a software engineer responsible for implementing user interfaces/features using Javascript. Building user experiences 
+        Creating UIs using Vue.js
       </p>
       <a href="#" class="w-[230px] duration-200">
         <AppButton text="Get in Touch!"  class="w-full mt-12"/>

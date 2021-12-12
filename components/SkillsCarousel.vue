@@ -1,5 +1,5 @@
 <template>
-  <section class="h-32 w-11/12 mx-auto lg:px-12 mt-32 overflow-x-scroll rounded-sm flex gap-x-2 shadow-inner bg-[#59e4a0] border-2 border-[#59e4a0]">
+  <section class="h-32 mx-auto lg:px-12 mt-32 overflow-x-scroll rounded-sm flex gap-x-2 shadow-inner bg-[#59e4a0] border-2 border-[#59e4a0]">
     <Skill v-for="skill in skills" :key="skill.id" :skill="skill"/>
   </section>
 </template>

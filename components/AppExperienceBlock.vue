@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col sm:flex-row h-96 w-full max-w-3xl">
+  <div class="flex flex-col sm:flex-row h-[32rem] sm:h-96 w-full max-w-3xl">
 
     <ul class="flex overflow-x-scroll sm:overflow-x-visible p-2 sm:flex-col sm:justify-center font-fira">
 
@@ -40,9 +40,8 @@ export default {
         return {
             companies: [
                 {id: 0, name: "Personify XP", jobTitle: "Junior Software Engineer", date: "March 2021 - Present", roleDescrption: [{id: 1, description: ""}]},
-                {id: 1, name: "CYF", jobTitle: "Teaching Assistant", date: "May 2021 - Present", roleDescrption: [{id: 1, description: ""}]},
+                {id: 1, name: "Code Your Future", jobTitle: "Teaching Assistant", date: "May 2021 - Present", roleDescrption: [{id: 1, description: ""}]},
                 {id: 2, name: "Santander", jobTitle: "Personal Banker", date: "August 2016 - March 2021", roleDescrption: [{id: 1, description: "I have a background working in financial services and this experience allows me to confidently communicate with stakeholders at all levels. This experience also provides me a great range of interpersonal, social and time management skills that are a core part of my working life and transferable skills which are relevant to any role. I am extremely hardworking and determined to make that transition from a personal banker to a software developer."}]},
-                {id: 3, name: "John Lewis", jobTitle: "Customer Advisor", date: "January 2014 - August 2016", roleDescrption: [{id: 1, description: ""}]},
             ],
             index: 0
         }
