@@ -16,10 +16,9 @@
       <div class="grid grid-cols-2 sm:grid-cols-4 flex-wrap p-2 lg:p-0 max-w-max mx-auto">
         <KeySkill :icon="require('../static/'+ skill.icon + '.png')" :title="skill.title" :text="skill.text" v-for="skill in keySkills" :key="skill.title"/>
       </div>
-      
-    <!-- <SkillsCarousel /> -->
 
-
+      <!-- Skills Block -->
+      <SkillBlock />
       <!-- Get In Touch CTA-->
       <div class="flex flex-col max-w-max mx-auto">
         <div class="w-full px-8 lg:max-w-sm">
