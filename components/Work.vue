@@ -1,5 +1,5 @@
 <template>
-  <main id="work" class="min-h-screen pt-24 p-6 md:p-12 lg:px-20 xl:px-40 relative my-12">
+  <main id="work" class="pt-24 p-6 md:p-12 lg:px-20 xl:px-40 relative my-12">
     <section class="mx-auto">
         <AppSectionHeader title="Projects"/>
 
