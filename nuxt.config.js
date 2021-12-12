@@ -20,7 +20,12 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap' },
-    ]
+    ],
+    script: [
+      {
+        src: "https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js",
+      },
+    ],
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [

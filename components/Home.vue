@@ -17,16 +17,37 @@
     </section>
     <BackgroundRing customClasses="h-24 sm:h-48 md:h-64 lg:h-96 right-0 bottom-0"/>
 
+    <canvas class="background"></canvas>
+
   </main>
 </template>
 
 <script>
 export default {
+  mounted(){
+    Particles.init({
+    selector: '.background',
+    color: '#FFFFFF',
+    maxParticles: 50,
+    sizeVariations:25,
+    speed: 2,
+    connectParticles: true,
+    });
+  }
 
 
 
 }
 </script>
 
-<style>
+<style scoped>
+.background {
+position:absolute;
+display:block;
+top: 0;
+left: 0;
+z-index: 0;
+pointer-events: none;
+opacity: 0.1;
+}
 </style>
