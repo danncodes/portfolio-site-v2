@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col sm:flex-row h-[32rem] sm:h-96 w-full max-w-3xl">
+  <div class="flex flex-col sm:flex-row min-h-[32rem] sm:min-h-[auto] w-full max-w-3xl">
 
-    <ul class="flex overflow-x-scroll sm:overflow-x-visible p-2 sm:flex-col sm:justify-center font-fira">
+    <ul class="flex overflow-x-scroll sm:overflow-x-visible p-2 sm:flex-col sm:justify-center font-fira sm:min-h-[24rem] sm:max-h-96">
 
         <li class="flex-grow h-12 min-w-[10rem] items-center justify-evenly flex relative cursor-pointer hover:bg-theme-secondary hover:bg-opacity-70" @click="toggleSection(company.id)" :class=" { 'text-[#59e4a0] hover:text-primary-100' : index == company.id }" v-for="company in companies" :key="company.id">
             <div class="w-full sm:w-[2px] h-[2px] sm:h-full absolute bottom-0 sm:left-0 duration-300 transition-colors" :class=" index == company.id ? 'bg-[#59e4a0]' : 'bg-white bg-opacity-40'"></div>
@@ -24,9 +24,9 @@
 
         <!-- Job Description -->
         <ul class="my-4 flex justify-center flex-col">
-            <li class="flex mb-2 ml-1 sm:w-10/12" v-for="description in companies[index].roleDescrption" :key="description.id">
-                 <hr class="w-2 mr-4 border-[#59e4a0] border-1 px-1">
-                 <span class="font-inter text-primary-200 text-sm pl-4">{{ description.description }}</span>
+            <li class="flex mb-2 ml-1 sm:w-10/12 text-primary-200" v-for="description in companies[index].roleDescrption.description" :key="description">
+                 <span class="font-inter text-sm pl-4 mr-4 text-secondary">▹</span>
+                  {{ description }}
             </li>
         </ul>
     </section>
@@ -39,9 +39,9 @@ export default {
     data(){
         return {
             companies: [
-                {id: 0, name: "Personify XP", jobTitle: "Junior Software Engineer", date: "March 2021 - Present", roleDescrption: [{id: 1, description: ""}]},
-                {id: 1, name: "Code Your Future", jobTitle: "Teaching Assistant", date: "May 2021 - Present", roleDescrption: [{id: 1, description: ""}]},
-                {id: 2, name: "Santander", jobTitle: "Personal Banker", date: "August 2016 - March 2021", roleDescrption: [{id: 1, description: "I have a background working in financial services and this experience allows me to confidently communicate with stakeholders at all levels. This experience also provides me a great range of interpersonal, social and time management skills that are a core part of my working life and transferable skills which are relevant to any role. I am extremely hardworking and determined to make that transition from a personal banker to a software developer."}]},
+                {id: 0, name: "Personify XP", jobTitle: "Junior Software Engineer", date: "March 2021 - Present", roleDescrption: {id: 1, description: ["Working with a variety of different languages and frameworks such as JavaScript, Vue, Node.js, PostgresSQL etc.", "Client-side UI scripting using JavaScript", "Testing Integrations using Jest", "Building complex web applications", "Working with Git Versioning Tools", "Debugging code errors", "Communicating with a multi-disciplinary team of engineers, designers, clients and stakeholders on a daily basis"]}},
+                {id: 1, name: "Code Your Future", jobTitle: "Teaching Assistant", date: "May 2021 - Present", roleDescrption: {id: 1, description: ["At Code Your Future, I am a volunteer teaching assistant supporting the community with their Full-stack curriculum. CYF focuses on helping those from unlikely and disadvantaged backgrounds to achieve their dreams of pursuing successful careers in technology. I feel really passionate about making technology accessible for all and being a part of a movement diversifying the industry.", "CYF covers an 8-month full-stack web development course covering HTML, CSS, Vanilla JavaScript, React, Node.js, MONGODB, SQL and more, with live classes on weekends (1-full day) and online assignments during the week.", "In their journey of interrupted lives, unfinished studies and integration challenges, many of these individuals yearn to update their tech skills, but lack learning opportunities. Code Your Future want to change this."]}},
+                {id: 2, name: "Santander", jobTitle: "Personal Banker", date: "August 2016 - March 2021", roleDescrption: {id: 1, description: ["The position required clear and effective communication with stakeholders at all levels", "Writing up reports for analysis on client accounts.", "Collaboration with different departments within the business to achieve desired client outcomes.", "The ability to utilise social and time management skills"]}},
             ],
             index: 0
         }
