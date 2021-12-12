@@ -1,14 +1,13 @@
 <template>
-  <div class="flex items-center mt-3 mb-10">
-        <span class="text-secondary text-sm text-center mr-4">{{ number }}</span>
-        <h1 class="font-semibold text-2xl whitespace-nowrap">{{ title }}</h1>
-        <hr class="w-full max-w-xs ml-4 border-[#59e4a0] border-1">
+  <div class="flex items-center mb-7">
+        <hr class="w-4 mr-4 border-[#59e4a0] border-1">
+        <h6 class="text-secondary font-fira duration-200 text-sm">{{title}}</h6>
       </div>
 </template>
 
 <script>
 export default {
-    props: ["number", "title"]
+    props: [ "title"]
 
 }
 </script>
