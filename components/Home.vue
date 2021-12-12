@@ -28,10 +28,37 @@ export default {
     Particles.init({
     selector: '.background',
     color: '#FFFFFF',
-    maxParticles: 50,
+    maxParticles: 30,
     sizeVariations:25,
-    speed: 2,
+    speed: 1,
     connectParticles: true,
+    responsive: [
+      {
+        breakpoint: 320,
+        options: {
+          maxParticles: 10
+        }
+      },
+      {
+        breakpoint: 375,
+        options: {
+          maxParticles: 12
+        }
+      },
+      {
+        breakpoint: 425,
+        options: {
+          maxParticles: 15
+        }
+      },
+      {
+        breakpoint: 768,
+        options: {
+          maxParticles: 20,
+          sizeVariations:30,
+        }
+      },
+    ]
     });
   }
 
