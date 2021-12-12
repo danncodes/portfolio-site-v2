@@ -11,6 +11,8 @@
         <div class="z-[2] h-5 bg-[#59e4a182] absolute left-0 top-0" ref="skillLevel">
         </div>
 
+        <span class="absolute right-4 top-1/4 text-[11px] text-gray-50 font-fira font-semibold">{{ skillLevel }}</span>
+
     </section>
 
 
@@ -27,6 +29,7 @@ export default {
         updateSkill(){
             const skillLevel = this.$refs.skillLevel
             skillLevel.style.width = this.skillLevel
+
         }
     }
 

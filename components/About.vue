@@ -4,17 +4,17 @@
   <!-- Header -->
   <AppSectionHeader title="About Me"/>
 
-  <section class="flex flex-col md:justify-center md:flex-row">
+  <section class="flex flex-col md:justify-center md:flex-row md:items-center">
     <!-- Skills Text and Icon Section -->
     <section class="max-w-4xl mx-auto">
-      <div class="grid grid-cols-2 flex-wrap p-2 lg:p-0 max-w-max mx-auto my-12">
+      <div class="grid grid-cols-2 lg:grid-cols-4 flex-wrap p-2 lg:p-0 max-w-max mx-auto my-12">
         <KeySkill :icon="require('../static/'+ skill.icon + '.png')" :title="skill.title" :text="skill.text" v-for="skill in keySkills" :key="skill.title"/>
       </div>
       <div class="flex flex-col justify-center gap-x-2">
         <!-- About me Text -->
         <ul class="max-w-xl text-primary-200 mx-auto">
-          <li class="mb-4">I enjoy working in collaborative environments where I am encouraged to grow as a full-stack developer.</li>
-          <li class="mb-4"> I am currently completing my level 4 Software Engineering apprenticeship at a London based start-up company Personify XP, where I have been able to develop a range of different features for their live client sites.</li>
+          <li class="mb-4 text-center">I enjoy working in collaborative environments where I am encouraged to grow as a full-stack developer.</li>
+          <li class="mb-4 text-center"> I am currently completing my level 4 Software Engineering apprenticeship at a London based start-up company Personify XP, where I have been able to develop a range of different features for their live client sites.</li>
         </ul>
       </div>
     </section>
