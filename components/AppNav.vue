@@ -32,7 +32,7 @@
             <a class="p-2 pl-0 text-sm hover:text-secondary duration-500" href="#contact">Contact</a>
         </li>
         <li class="ml-4">
-            <a href="#">
+            <a href="/myCV.pdf" target="_blank">
                 <AppButtonAlt text="View CV"/>
             </a>
         </li>

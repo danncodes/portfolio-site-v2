@@ -11,7 +11,19 @@
 </template>
 
 <script>
-import Experience from '../components/Experience.vue'
+
 export default {
-  components: { Experience },}
+  head() {
+      return {
+        title: "Daniel Mensah",
+        meta: [
+          {
+            name: 'Developer Portfolio',
+            content: 'Daniel Mensah Software Engineer Portolio'
+          }
+        ]
+      }
+  }
+
+}
 </script>

@@ -30,7 +30,7 @@
                 </li>
 
                 <li class="my-4">
-                    <a href="#">
+                    <a href="/myCV.pdf" target="_blank">
                         <AppButtonAlt text="View CV" />
                     </a>
                 </li>
