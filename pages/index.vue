@@ -5,6 +5,8 @@
   <About />
   <Experience />
   <Work />
+  <Contact />
+  <Footer />
 </main>
 </template>
 
