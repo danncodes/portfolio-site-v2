@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col max-w-lg mx-auto my-8">
+  <a class="flex flex-col max-w-sm mx-auto my-8 rounded-xs duration-300" :href="project.liveLink" target="_blank">
 
     <!-- Browser Bar -->
     <div class="h-6 bg-[#ddd] w-full text-[#8a8a8a] flex items-center relative">
@@ -16,10 +16,10 @@
         </div>
     </div>
 
-    <section class="project w-full">
+    <section class="w-full rounded-xs">
         <img :src="project.img" alt="" class="object-fill">
     </section>
-  </main>
+  </a>
 </template>
 
 <script>
