@@ -1,5 +1,5 @@
 <template>
-  <a class="flex flex-col max-w-sm mx-auto my-8 rounded-xs duration-300" :href="project.liveLink" target="_blank">
+  <a class="flex flex-col max-w-sm mx-auto my-8 rounded-xs duration-300 opacity-90 hover:opacity-100 hover:translate-y-2" :href="project.liveLink" target="_blank">
 
     <!-- Browser Bar -->
     <div class="h-6 bg-[#ddd] w-full text-[#8a8a8a] flex items-center relative">

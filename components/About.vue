@@ -48,10 +48,10 @@ export default {
   data(){
     return {
       keySkills: [
-        {icon:"timer", title: "Fast", text: "Fast and Lag free", },
-        {icon:"responsive", title: "Responsive", text: "Scalable Web Apps", },
-        {icon:"select", title: "Intuitive", text: "Simple and Intuitive UI/UX", },
-        {icon:"dynamic", title: "Dynamic", text: "Websites that come to life", }
+        {icon:"timer", title: "Fast", text: "Fast and Lag-Free Web Experiences", },
+        {icon:"responsive", title: "Responsive", text: "Web Apps that scale regardless of device", },
+        {icon:"select", title: "Intuitive", text: "Simple and Intuitive UI/UX designs", },
+        {icon:"dynamic", title: "Dynamic", text: "Personilised websites that come to life", }
         ]
     }
   }

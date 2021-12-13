@@ -1,7 +1,7 @@
 <template>
   <main id="work" class="pt-24 p-6 md:p-12 lg:px-20 xl:px-40 relative my-12">
     <section class="mx-auto">
-        <AppSectionHeader title="Projects"/>
+        <AppSectionHeader title="Personal Projects"/>
 
       <div class="my-12 flex flex-col gap-y-3 lg:grid lg:grid-cols-3 lg:gap-x-3 w-full">
         <ProjectCard v-for="project in projects" :key="project.id" :project="project"/>
