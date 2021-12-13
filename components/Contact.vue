@@ -1,5 +1,5 @@
 <template>
-  <main id="contact" class="min-h-screen duration-200 pt-24 p-6 md:p-12 lg:px-20 xl:px-40 relative">
+  <main id="contact" class="duration-200 pt-24 p-6 md:p-12 lg:px-20 xl:px-40 relative">
       <AppSectionHeader title="Contact" />
     <section class="flex flex-col w-full">
 
