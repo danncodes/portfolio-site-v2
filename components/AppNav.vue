@@ -1,5 +1,5 @@
 <template>
-  <header class="h-24 z-10 px-6 md:px-10 flex justify-between items-center fixed top-0 left-0 w-full backdrop-blur-sm bg-theme-primary">
+  <header class="h-24 z-10 px-6 md:px-10 flex justify-between items-center fixed top-0 left-0 w-full backdrop-blur-sm bg-opacity-60 dark:bg-theme-primary">
     
     <!-- Placeholder Logo -->
     <div class="h-10 w-10 text-secondary bg-opacity-30 font-black font-fira">
@@ -14,7 +14,7 @@
     </div>
 
     <!-- Nav Items -->
-    <ol class="hidden md:flex gap-1 font-fira items-center font-light">
+    <ol class="hidden md:flex gap-1 font-fira items-center font-light text-primary-200 dark:text-primary-100">
         <li class="mx-1">
             <span class="text-secondary text-xs p-1 pr-0">01.</span>
             <a class="p-2 pl-0 text-sm hover:text-secondary duration-500" href="#about">About</a>

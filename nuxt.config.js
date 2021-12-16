@@ -6,7 +6,8 @@ export default {
   head: {
     title: 'portfolio-site-v2',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
+      class: 'dark'
     },
     meta: [
       { charset: 'utf-8' },

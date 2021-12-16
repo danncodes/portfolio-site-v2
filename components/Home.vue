@@ -4,7 +4,7 @@
 
       <AppSectionHeader title="Welcome" />
       <h3 class="font-medium text-2xl md:text-3xl lg:text-4xl duration-200 mb-3 text-primary-200">Hi I am</h3>
-      <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl duration-200">Daniel Mensah.</h1>
+      <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl duration-200 text-secondary dark:text-primary-100">Daniel Mensah.</h1>
       <p class="mt-5 max-w-lg duration-200 text-primary-200">I am a Software Engineer at <span class="font-fira text-secondary">PersonifyXP</span> in London. I have a serious passion for building frontend architecture, dynamic user experiences and developing complex web applications.</p>
       <a href="#contact" class="w-[230px] duration-200">
         <AppButton text="Get in Touch!"  class="w-full mt-12"/>

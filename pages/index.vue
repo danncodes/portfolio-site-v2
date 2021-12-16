@@ -1,5 +1,5 @@
 <template>
-<main class="font-inter text-primary-100 bg-theme-primary">
+<main class="font-inter text-primary-100 dark:bg-theme-primary">
   <AppNav />
   <Home />
   <About />
