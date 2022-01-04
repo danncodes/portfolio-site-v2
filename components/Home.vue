@@ -22,7 +22,7 @@ export default {
   mounted(){
     Particles.init({
     selector: '.background',
-    color: '#FFFFFF',
+    color: '#59e4a0',
     maxParticles: 30,
     sizeVariations:25,
     speed: 1,

@@ -11,9 +11,10 @@ export default {
     data(){
         return {
             Skills: [
-                {skill: "Vue.JS", skillLevel: "80%"},
+                {skill: "Vue", skillLevel: "80%"},
                 {skill: "VueX", skillLevel: "80%"},
                 {skill: "Nuxt.JS", skillLevel: "80%"},
+                {skill: "React", skillLevel: "60%"},
                 {skill: "HTML", skillLevel: "80%"},
                 {skill: "CSS", skillLevel: "80%"},
                 {skill: "Javascript", skillLevel: "80%"},

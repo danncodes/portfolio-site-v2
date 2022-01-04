@@ -37,6 +37,8 @@
             </a>
         </li>
     </ol>
+    
+    <DarkModeToggler />
 
     <MobileNav />
 
