@@ -3,7 +3,7 @@
 
     <ul class="flex overflow-x-scroll sm:overflow-x-visible p-2 sm:flex-col sm:justify-center font-fira sm:min-h-[24rem] sm:max-h-96">
 
-        <li class="flex-grow h-12 min-w-[10rem] items-center justify-evenly flex relative cursor-pointer hover:bg-theme-secondary hover:bg-opacity-70" @click="toggleSection(company.id)" :class=" { 'text-[#59e4a0] hover:text-primary-100' : index == company.id }" v-for="company in companies" :key="company.id">
+        <li class="flex-grow h-12 min-w-[10rem] items-center justify-evenly flex relative cursor-pointer text-primary-200 hover:bg-theme-secondary hover:bg-opacity-70" @click="toggleSection(company.id)" :class=" { 'text-[#59e4a0] hover:text-primary-100' : index == company.id }" v-for="company in companies" :key="company.id">
             <div class="w-full sm:w-[2px] h-[2px] sm:h-full absolute bottom-0 sm:left-0 duration-300 transition-colors" :class=" index == company.id ? 'bg-[#59e4a0]' : 'bg-white bg-opacity-40'"></div>
             {{ company.name}}
         </li>
@@ -13,7 +13,7 @@
 
         <!-- Title -->
         <div class="flex justify-center items-center flex-col sm:flex-row">
-            <h2 class="text-xl">{{companies[index].jobTitle}}</h2>
+            <h2 class="text-xl text-primary-200 dark:text-white">{{companies[index].jobTitle}}</h2>
             <h3 class="font-fira text-secondary ml-2"><span class="mx-2">@</span>{{ companies[index].name }}</h3>
         </div>
 
