@@ -10,9 +10,9 @@
 
         <form method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" ref="contactForm" class="max-w-xs w-full mx-auto rounded-sm p-2 text-black mb-8 z-[2]" @submit.prevent="submitForm" v-if="!formSubmitted">
             <input hidden name="form-name" value="contact" type="hidden">
-            <input type="text" class="p-2 w-full my-2 rounded-sm bg-gray-50 placeholder-[#b0b1bc] outline-none duration-300 focus:ring-2 focus:ring-[#59e4a0]" placeholder="Name" required>
-            <input type="email" class="p-2 w-full my-2 rounded-sm bg-gray-50 placeholder-[#b0b1bc] outline-none duration-300 focus:ring-2 focus:ring-[#59e4a0]" placeholder="Email" required>
-            <textarea name="" id="contactForm" class="w-full rounded-sm p-2 bg-gray-50 placeholder-[#b0b1bc] outline-none duration-300 focus:ring-2 focus:ring-[#59e4a0]" rows="10" placeholder="Your Message ..."></textarea>
+            <input type="text" class="p-2 w-full my-2 rounded-sm bg-gray-50 placeholder-[#b0b1bc] outline-none duration-300 focus:ring-2 focus:ring-[#59e4a0]" placeholder="Name" name="name" required>
+            <input type="email" class="p-2 w-full my-2 rounded-sm bg-gray-50 placeholder-[#b0b1bc] outline-none duration-300 focus:ring-2 focus:ring-[#59e4a0]" placeholder="Email" name="email" required>
+            <textarea name="body" id="contactForm" class="w-full rounded-sm p-2 bg-gray-50 placeholder-[#b0b1bc] outline-none duration-300 focus:ring-2 focus:ring-[#59e4a0]" rows="10" placeholder="Your Message ..."></textarea>
             <div class="w-full flex justify-center">
                 <AppButton text="Submit" class="w-full"/>
             </div>
@@ -32,22 +32,22 @@
 export default {
     data(){
         return {
-            formData: undefined,
-            formattedForm: undefined,
             formSubmitted: false
         }
     },
     methods: {
-        async submitForm(){
+        async submitForm(e){
             try{
-                this.formData = this.$refs.contactForm
-                this.formattedForm = new FormData(this.formData)
+                const contactForm = e.target
+                const formData = new FormData(contactForm)
+
                 fetch('/', {
                     method: 'POST',
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: new URLSearchParams(this.formattedForm).toString()
+                    body: new URLSearchParams(formData).toString(),
                 }).then(() => {
-                    this.formSubmitted = true
+                 this.formSubmitted = true
+                 console.log("Form Submitted")
                 })
             }
             catch(err) {
